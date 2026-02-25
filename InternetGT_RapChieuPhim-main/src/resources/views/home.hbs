@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="../../CSS/movie.css" />
+<main>
+  {{! <div class="quangCaoDiv">
+    <ul id="quangCaoUl">
+      <button id="nutTruoc">&lt</button>
+      <button id="nutSau">&gt</button>
+    </ul>
+  </div> }}
+
+  {{! <h2
+    id="troToiPhimDangChieu"
+    style=" 
+    line-height: 1.5em;
+      font-size: 40px;
+    "
+  >Phim đang chiếu</h2> }}
+  <h2
+    style=" 
+    line-height: 40px;
+    margin:30px;
+    "
+  ></h2>
+  <section id="phimDangChieu" class="chuyenSangChiTiet">
+    {{#each users}}
+      <div class="movie-card" ten-phim="{{tenphim}}">
+        <img src="{{posterLink}}" alt="{{tenphim}}" />
+        <h3>{{tenphim}} </h3>
+        <p> {{theloai}} </p>
+      </div>
+    {{/each}}
+  </section>
+
+  {{! <h2 id="troToiPhimSapChieu">Phim sắp chiếu</h2>
+  <section id="phimSapChieu" class="chuyenSangChiTiet"></section> }}
+
+  {{! <script src="../../public/JS/"></script>
+  <script src="./js/test.js"></script> }}
+  <script src="../../JS/movie.js"></script>
+</main>

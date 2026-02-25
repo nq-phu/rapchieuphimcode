@@ -1,0 +1,253 @@
+:root {
+  --mau-chu: rgb(208, 221, 21);
+  --do: #cd2c58;
+  --hong: #e06b80;
+  --vang: #ffc69d;
+  --da: #ffe6d4;
+  --xanh: #2907c0;
+
+  --vang1: #f4f754;
+  --do1: #aa0529;
+
+  --vang2: #f5ad18;
+  --donhat2: #9e1c60;
+  --do2: #811844;
+  --dodam2: #561530;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: rgb(236, 243, 248);
+  z-index: 250;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.banner {
+  color: var(--do1);
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: bold;
+}
+
+.navbar {
+  font: bold;
+  font-size: 20px;
+  text-align: center;
+  height: 60px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+body {
+  padding-top: 50px;
+  /* font-family: Helvetica; */
+  /* Arial, Helvetica, sans-serif */
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar a {
+  margin: 20px;
+  color: var(--do1);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: rgb(6, 30, 247);
+}
+
+.quangCaoDiv {
+  position: relative;
+  display: inline-block;
+}
+
+/* .navbar .singin {
+  margin-right: 20px;
+} */
+
+/* #quangCaoUl {
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  display: block;
+  visibility: hidden;
+} */
+
+#quangCaoUl ol {
+  display: inline-block;
+  width: 100px;
+  height: 200px;
+}
+
+#quangCaoUl ol img {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  height: 400px;
+}
+
+.quangCaoDiv button {
+  background: none;
+  border: none;
+  font-size: 60px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  opacity: 70%;
+  z-index: 200;
+  border-radius: 30%;
+}
+
+.quangCaoDiv button:hover {
+  opacity: 100%;
+}
+
+#nutSau {
+  position: absolute;
+  top: 185px;
+  right: 195px;
+}
+
+#nutTruoc {
+  position: absolute;
+  top: 185px;
+  left: 205px;
+}
+
+/* section {
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  transition: transform 1s ease;
+  scroll-behavior: smooth;
+}
+
+section div {
+  margin-left: 20px;
+  font: bold;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+section div img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+} */
+
+section {
+  box-sizing: border-box;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-left: 20px;
+  gap: 20px;
+  margin-right: 25px;
+}
+
+section div {
+  font-weight: bold;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 auto;
+  margin-left: 20px;
+}
+
+section div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+section div img {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 80px;
+  font-size: 40px;
+  color: var(--do1);
+  text-align: center;
+}
+
+/* phan footer */
+
+footer {
+  background-color: #f8f8f8; /* màu nền nhẹ */
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  padding: 40px 20px 20px 20px;
+  margin-top: 50px;
+  border-top: 2px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-container div {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-container h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer-container p,
+.footer-container li {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container ul li {
+  margin-bottom: 5px;
+}
+
+.footer-container ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+}

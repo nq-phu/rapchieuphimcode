@@ -1,0 +1,112 @@
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPT Cinemas</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="../../../css/layout.css" />
+
+  </head>
+  <body>
+
+    <div class="header-top1">
+      <div class="header-top-content">
+        {{#if user}}
+          <!-- Hiển thị khi đã đăng nhập -->
+          <span style="color: #ff7f50; font-weight: bold;">Xin chào,
+            {{user.ten}}!</span>
+          |
+          <a href="/dangxuat">Đăng xuất</a>
+        {{else}}
+          <!-- Hiển thị khi chưa đăng nhập -->
+          <a href="/">Đăng nhập</a>
+          |
+          <a href="#">Đăng ký</a>
+        {{/if}}
+        |
+        <a href="#">Tiếng Việt
+          <img
+            id="co"
+            src="https://media.istockphoto.com/id/464516754/vi/vec-to/qu%E1%BB%91c-k%E1%BB%B3-vi%E1%BB%87t-nam.jpg?s=612x612&w=0&k=20&c=20_fpqn2SzR-BYCcTgc77EuiudsNnh1c0mVXVJzSNbk="
+            alt="VN"
+          /></a>
+      </div>
+    </div>
+
+    <header class="header-main">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"><span>NPT</span> Cinemas</a>
+        </div>
+
+        <div class="sub-menu">
+          <a href="#">NPT Hà Nội </a>
+        </div>
+
+        <ul class="nav-links">
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      {{{body}}}
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+
+        <div class="footer-section">
+          <div class="footer-logo"><span>NPT</span> Cinemas</div>
+          <ul style="margin-top: 20px;">
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Phòng họp đối tác</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>CỤM RẠP NPT</h4>
+          <ul>
+            <li>NPT Cinemas Hà Nội - Hotline: 0987 654 321</li>
+            <li>NPT Cinemas TP.HCM - Hotline: 0912 345 678</li>
+            <li>NPT Cinemas Đà Nẵng - Hotline: 0900 123 456</li>
+
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/justhnamm/"
+              style="color:red"
+            >N</a>
+            <a href="https://www.facebook.com/xiaoxphu" style="color:red">P</a>
+            <a
+              href="https://www.facebook.com/jhonson.duayne"
+              style="color:red"
+            >T</a>
+          </div>
+          <img
+            src="https://www.bigc.vn/img/bo-cong-thuong.png"
+            id="bct"
+            alt="Bộ Công Thương"
+            class="bocongthuong"
+          />
+
+          <div class="footer-section">
+            <h4>LIÊN HỆ QUẢNG CÁO</h4>
+            <ul>
+              <p>Hotline: 0969696969</p>
+              <p>Email: ad@nptgroup.vn</p>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
